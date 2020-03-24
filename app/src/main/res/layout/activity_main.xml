@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="10dp"
+    android:orientation="vertical"
+    android:weightSum="11"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/marck_script"
+            android:gravity="center"
+            android:text="Instagram"
+            android:textColor="#ffffff"
+            android:textSize="50dp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="4">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginLeft="20dp"
+            android:background="#9C51B6 "
+            android:id="@+id/email"
+            android:layout_marginTop="20sp"
+            android:hint="EMAIL"
+            android:textColorHint="#fff"
+            android:inputType="textEmailAddress"
+            android:textSize="20dp">
+
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginLeft="20dp"
+            android:background="#9C51B6 "
+            android:layout_marginTop="20sp"
+            android:id="@+id/password"
+            android:hint="PASSWORD"
+            android:textColorHint="#fff"
+            android:inputType="textPassword"
+            android:textSize="20dp">
+
+        </EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="login"
+            android:layout_marginTop="30sp"
+            android:textColor="#fff"
+            android:background="@drawable/corner"
+            android:text="LOG IN"
+            android:textSize="20dp">
+
+        </Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="Forgot your login details?"
+            android:onClick=""
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            tools:ignore="OnClick">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColor="#fff"
+            android:text="Log in with Facebook"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20dp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <view
+            android:layout_width="150dp"
+            android:layout_height="4dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="30dp"
+            android:background="#000" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="15dp"
+            android:text="OR"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <view
+            android:layout_width="150dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="30dp"
+            android:background="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="3">
+
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Don't have an account?"
+            android:textSize="25dp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="Instagram from Facebook"
+            android:textSize="20dp"
+            android:layout_marginBottom="30sp">
+
+        </TextView>
+    </LinearLayout>
+</LinearLayout>
+
+
